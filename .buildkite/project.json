@@ -1,6 +1,5 @@
 {
   "name": "Node.js Example",
-  "repository": "https://github.com/buildkite/nodejs-example.git",
   "steps": [
     {
       "type": "script",
