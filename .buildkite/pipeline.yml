@@ -2,7 +2,7 @@ steps:
   - name: ":node:"
     command: "npm install && npm test"
     plugins:
-      "cache#a5f4c86":
+      "git@github.com:buildkite-plugins/cache-buildkite-plugin.git#a5f4c86":
         paths:
           - path: node_modules
             manifest: package-lock.json
