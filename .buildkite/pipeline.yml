@@ -1,3 +1,9 @@
 steps:
   - name: ":node:"
     command: "npm install && npm test"
+    plugins:
+      "cache:6f7f28c":
+        - path: node_modules
+          manifest: package-lock.json
+          scopes:
+            - manifest
