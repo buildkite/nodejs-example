@@ -4,6 +4,6 @@
     "test": "mocha ./test.js"
   },
   "devDependencies": {
-    "mocha": "6.1.4"
+    "mocha": "6.2.0"
   }
 }
