@@ -27,4 +27,4 @@ This example:
 
 ## License
 
-See [LICENSE](LICENSE) (MIT)
+See [LICENSE.md](LICENSE.md) (MIT)
