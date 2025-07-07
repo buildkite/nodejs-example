@@ -5,7 +5,6 @@ color: "#F0FDF2"
 languages:
   - "JavaScript"
   - "Node.js"
-  - "YAML"
 steps:
   - label: ":pipeline:"
     command: "buildkite-agent pipeline upload"
