@@ -1,5 +1,9 @@
-# Used by the 'Add to Buildkite' button in the readme
 name: "Node.js Example"
+description: "An example pipeline that tests a Node.js project using Buildkite, assuming Node.js is installed on the agent."
+emoji: ":nodejs:"
+color: "#F0FDF2"
+languages:
+  - "JavaScript"
 steps:
   - label: ":pipeline:"
     command: "buildkite-agent pipeline upload"
