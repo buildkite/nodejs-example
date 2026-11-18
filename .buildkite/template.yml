@@ -1,5 +1,5 @@
 name: "Node.js Example"
-description: "An example pipeline that tests a Node.js project using Buildkite, assuming Node.js is installed on the agent."
+description: "An example pipeline that tests a Node.js project using the official Node.js image on Buildkite hosted agents."
 emoji: ":nodejs:"
 color: "#F0FDF2"
 languages:

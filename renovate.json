@@ -1,9 +1,29 @@
 {
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "minor": { "automerge": true },
   "patch": { "automerge": true },
-  "requiredStatusChecks": null,
+  "ignoreTests": false,
+  "platformAutomerge": false,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^\\.buildkite\\/pipeline\\.yml$/"],
+      "matchStrings": [
+        "(?:^|\\n)image: \"(?<depName>node):(?<currentValue>[^\"@\\s]+)@(?<currentDigest>sha256:[a-f0-9]{64})\""
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "node"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["node"],
+      "pinDigests": true,
+      "automerge": true
+    }
+  ],
   "prHourlyLimit": 0
 }

@@ -20,10 +20,10 @@ See the full [Getting Started Guide](https://buildkite.com/docs/guides/getting-s
 ## How it works
 
 This example:
-- Runs `npm install` and `npm test` using Node.js
-- Assumes Node.js is already available on the agent machine
+- Runs `npm ci` and `npm test` using the official Node.js image on a Buildkite hosted agent
+- Pins the image version and digest, with Renovate updating to new LTS releases and merging updates after checks pass and the required approval is present
 
-> 💡 If you prefer to use Docker instead of installing Node.js directly, check out the [Node.js Docker Example](https://github.com/buildkite/nodejs-docker-example).
+> 💡 For self-hosted agents using the Docker plugin, check out the [Node.js Docker Example](https://github.com/buildkite/nodejs-docker-example).
 
 <!-- docs:end -->
 
